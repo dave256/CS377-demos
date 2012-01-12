@@ -39,7 +39,7 @@ MainWindow::MainWindow(int argc, char *argv[])
     // initialize orthographic viewing projections
     glMatrixMode(GL_PROJECTION);
     glLoadIdentity();
-    gluOrtho2D(0, 400, 0, 400);
+    gluOrtho2D(0, 800, 0, 800);
     glMatrixMode(GL_MODELVIEW);
     glLoadIdentity();
 }
