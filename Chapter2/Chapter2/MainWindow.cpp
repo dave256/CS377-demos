@@ -28,7 +28,7 @@ MainWindow::MainWindow(int argc, char *argv[])
     // create window
     glutInit(&argc, argv);
     glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB);
-    glutInitWindowSize(500, 500);
+    glutInitWindowSize(500, 250);
     glutInitWindowPosition(30, 100);
     glutCreateWindow("Chapter2");
     
