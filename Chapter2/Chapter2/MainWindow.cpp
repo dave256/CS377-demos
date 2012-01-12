@@ -39,7 +39,7 @@ MainWindow::MainWindow(int argc, char *argv[])
     // initialize orthographic viewing projections
     glMatrixMode(GL_PROJECTION);
     glLoadIdentity();
-    glOrtho(0, 200, 0, 200, -1, 1);
+    glOrtho(0, 100, 0, 100, -1, 1);
     glMatrixMode(GL_MODELVIEW);
     glLoadIdentity();
 }
@@ -74,6 +74,14 @@ void MainWindow::displayCB()
     glVertex3f(80, 80, 0);
     glVertex3f(20, 80, 0);
     glEnd();
+    
+    glBegin(GL_POLYGON);
+    glVertex3f(120, 120, 0);
+    glVertex3f(180, 120, 0);
+    glVertex3f(180, 180, 0);
+    glVertex3f(120, 180, 0);
+    glEnd();
+
     
     // force screen update
     glFlush();
