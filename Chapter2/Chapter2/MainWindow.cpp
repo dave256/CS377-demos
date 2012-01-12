@@ -28,7 +28,7 @@ MainWindow::MainWindow(int argc, char *argv[])
     // create window
     glutInit(&argc, argv);
     glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB);
-    glutInitWindowSize(500, 250);
+    glutInitWindowSize(500, 500);
     glutInitWindowPosition(30, 100);
     glutCreateWindow("Chapter2");
     
@@ -39,7 +39,7 @@ MainWindow::MainWindow(int argc, char *argv[])
     // initialize orthographic viewing projections
     glMatrixMode(GL_PROJECTION);
     glLoadIdentity();
-    glOrtho(0, 100, 0, 100, -1, 1);
+    glOrtho(0, 200, 0, 200, -1, 1);
     glMatrixMode(GL_MODELVIEW);
     glLoadIdentity();
 }
