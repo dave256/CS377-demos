@@ -69,9 +69,14 @@ void MainWindow::displayCB()
     glColor3f(1, 0, 0);
     
     glBegin(GL_POLYGON);
+    glColor3f(1, 0, 0);
     glVertex3f(20, 20, 0);
+    glColor3f(0, 1, 0);
     glVertex3f(80, 20, 0);
+    glColor3f(0, 0, 1);
     glVertex3f(80, 80, 0);
+    glColor3f(1, 1, 1);
+    glVertex3f(20, 80, 0);
     glEnd();
     
     // force screen update
